@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossfuze · World Forum 2026 social schedule</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin:0; background:#040E3D; color:#fff; font-family:"Source Sans 3", system-ui, sans-serif; }
+  a { color:#71F1F7; text-decoration:none; }
+  a:hover { color:#8FFFDB; }
+  .wrap { min-height:100vh; background:linear-gradient(160deg,#02081F 0%,#040E3D 40%,#072B58 100%); padding:44px clamp(20px,4vw,64px) 80px; display:flex; flex-direction:column; gap:52px; }
+  h1 { margin:0; font-size:clamp(34px,5vw,58px); font-weight:700; line-height:1.03; letter-spacing:-0.02em; }
+  h2 { margin:0; font-size:26px; font-weight:700; }
+  .eyebrow { font-size:14px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; }
+  .rail { position:relative; display:flex; gap:12px; overflow-x:auto; padding-bottom:8px; }
+  .line { position:absolute; top:126px; height:2px; }
+  .col { flex:1 1 0; min-width:118px; display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; }
+  .lab { height:96px; display:flex; flex-direction:column; justify-content:flex-end; gap:6px; }
+  .date { font-size:13px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.55); }
+  .kind { font-size:16px; font-weight:700; line-height:1.2; }
+  .node { width:60px; height:60px; border-radius:999px; border:none; cursor:pointer; color:#040E3D; font-family:inherit; font-size:20px; font-weight:700; transition:transform .12s cubic-bezier(.2,0,0,1); }
+  .node:hover { transform:translateY(-3px); }
+  .thumb { width:100%; max-width:150px; height:auto; border-radius:8px; display:block; cursor:pointer; border:1px solid rgba(255,255,255,0.15); }
+  .ph { width:100%; max-width:150px; aspect-ratio:1; border-radius:8px; border:1px dashed rgba(255,255,255,0.3); display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; color:rgba(255,255,255,0.5); cursor:pointer; padding:10px; }
+  .ov { position:fixed; inset:0; z-index:300; background:rgba(2,8,31,0.88); display:none; align-items:center; justify-content:center; padding:clamp(16px,4vw,48px); cursor:zoom-out; }
+  .ov.on { display:flex; }
+  .panel { background:#0A1855; border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:32px; max-width:1000px; width:100%; max-height:86vh; overflow-y:auto; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:32px; cursor:default; }
+  .panel.noimg { grid-template-columns:minmax(0,1fr); }
+  .panel p { margin:0; }
+  .chip { background:#71F1F7; color:#040E3D; border-radius:999px; padding:6px 16px; font-size:14px; font-weight:700; }
+  .dl { background:#63DF4E; color:#040E3D; border-radius:999px; padding:12px 24px; font-size:15px; font-weight:700; text-align:center; display:block; }
+  .dl:hover { color:#040E3D; }
+  @media (max-width:760px){ .panel { grid-template-columns:minmax(0,1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex; flex-direction:column; gap:14px">
+    <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:24px; flex-wrap:wrap">
+      <div style="font-size:30px; font-weight:700; letter-spacing:-0.02em">Crossfuze</div>
+      <div class="eyebrow" style="color:#71F1F7">Click any post for the caption</div>
+    </div>
+    <div class="eyebrow" style="color:#8FFFDB; padding-top:8px">Social schedule · World Forum 2026</div>
+    <h1>Sixteen posts. <span style="color:#71F1F7">Two cities.</span></h1>
+    <p style="margin:0; font-size:19px; line-height:1.55; max-width:720px; color:rgba(255,255,255,0.78)">London runs 17 September to 19 October, Toronto 1 October to 2 November. Every card is 1200×1200 for the Crossfuze company page.</p>
+  </header>
+
+  <section style="display:flex; flex-direction:column; gap:20px">
+    <div style="display:flex; align-items:baseline; gap:16px; flex-wrap:wrap">
+      <h2 style="color:#63DF4E">London</h2>
+      <span style="font-size:15px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.6)">20 October · ExCeL London · 8 posts · 9 assets</span>
+    </div>
+    <p style="margin:0;color:rgba(255,255,255,.7)">17 September uses two announcement images. 3 October is suggested; its existing caption needs review. Confirm stand numbers before publishing invitation posts.</p>
+    <div class="rail" id="railL">
+      <div class="line" style="left:6%; right:6%; background:linear-gradient(90deg,#63DF4E,#29D3C6 50%,#71F1F7)"></div>
+    </div>
+  </section>
+
+  <section style="display:flex; flex-direction:column; gap:20px; border-top:1px solid rgba(255,255,255,0.14); padding-top:40px">
+    <div style="display:flex; align-items:baseline; gap:16px; flex-wrap:wrap">
+      <h2 style="color:#71F1F7">Toronto</h2>
+      <span style="font-size:15px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.6)">3 November · Metro Toronto Convention Centre · 8 posts · 9 assets</span>
+    </div>
+    <div class="rail" id="railT">
+      <div class="line" style="left:9%; right:9%; background:linear-gradient(90deg,#71F1F7,#2CB0CD 55%,#C0A6FF)"></div>
+    </div>
+  </section>
+
+  <footer style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; border-top:1px solid rgba(255,255,255,0.14); padding-top:28px; font-size:15px; color:rgba(255,255,255,0.6)">
+    <span style="font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.45)">Links</span>
+    <a href="https://www.servicenow.com/events/world-forum/london.html" target="_blank" rel="noopener">World Forum London</a>
+    <a href="https://reg.servicenow.com/flow/servicenow/wflondon26/sponsorshowcase/page/sponsors" target="_blank" rel="noopener">London sponsor showcase</a>
+    <a href="assets/london/WF26-London-captions.md" download>Download supplied London captions</a>
+    <a href="https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london" target="_blank" rel="noopener">Book a London meeting</a>
+    <a href="https://www.servicenow.com/events/world-forum/toronto.html" target="_blank" rel="noopener">World Forum Toronto</a>
+    <a href="assets/toronto/WF26-Toronto-captions.md" download>Download supplied Toronto captions</a>
+    <a href="https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto" target="_blank" rel="noopener">Book a Toronto meeting</a>
+    <span>London stand and Toronto booth numbers outstanding</span>
+  </footer>
+</div>
+
+<div class="ov" id="ov"><div class="panel" id="panel"></div></div>
+
+<script>
+var EV = 'https://www.servicenow.com/events/world-forum/london.html';
+var SP = 'https://reg.servicenow.com/flow/servicenow/wflondon26/sponsorshowcase/page/sponsors';
+
+var LONDON = [
+  {
+    "n": "1",
+    "date": "17 Sep",
+    "label": "Platinum<br>announcement",
+    "grad": "linear-gradient(150deg,#8FFFDB,#29D3C6)",
+    "glow": "rgba(143,255,219,0.45)",
+    "img": "assets/london/WF26-London-00-platinum-opener.png",
+    "city": "London",
+    "full": "17 September",
+    "kind": "Post 1 · Platinum announcement",
+    "head": "London · Platinum Sponsor",
+    "body": [
+      "London, we’ll see you at World Forum 2026. 👋",
+      "Crossfuze is proud to be a Platinum Sponsor of ServiceNow World Forum London on 20 October at ExCeL London.",
+      "With AI firmly on the agenda, we’re looking forward to conversations about what comes next for your organisation, and how to make it happen with ServiceNow.",
+      "Whether you’re strengthening your foundations, exploring AI or planning your next stage of transformation, come and meet the Crossfuze team.",
+      "📍 ExCeL London\n📅 20 October 2026"
+    ],
+    "tags": "#ServiceNow #WorldForum2026 #Crossfuze",
+    "link": "https://www.servicenow.com/events/world-forum/london.html",
+    "linkLabel": "Explore the event and register",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london",
+    "images": [
+      "assets/london/WF26-London-00-platinum-opener.png",
+      "assets/london/WF26-London-01-road-to-zero.png"
+    ],
+    "note": "Two announcement images for 17 September. Use the opener as the lead image; Road to Zero can be the second image. Replaces the separate 22 September slot."
+  },
+  {
+    "n": "2",
+    "date": "29 Sep",
+    "label": "AI readiness<br>gap",
+    "grad": "linear-gradient(150deg,#63DF4E,#29D3C6)",
+    "glow": "rgba(99,223,78,0.45)",
+    "img": "assets/london/WF26-London-02-readiness-gap.png",
+    "city": "London",
+    "full": "29 September",
+    "kind": "Post 2 · Readiness Gap",
+    "head": "Readiness Gap",
+    "body": [
+      "Which workflow would you trust AI to take on first?",
+      "And what would need to be true before you did?",
+      "Those are the conversations we’re looking forward to at ServiceNow World Forum London.",
+      "For Crossfuze, preparing for the Autonomous Enterprise starts with practical questions: the outcome you want, the data you can trust and the controls that give you confidence to move forward.",
+      "If you’re working through your ServiceNow AI readiness priorities, let’s compare notes.",
+      "Join us on 20 October at ExCeL London, where Crossfuze will be a Platinum Sponsor."
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026",
+    "link": "https://www.servicenow.com/events/world-forum/london.html",
+    "linkLabel": "Plan your visit",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london"
+  },
+  {
+    "n": "3",
+    "date": "3 Oct",
+    "label": "Permission<br>to automate",
+    "grad": "linear-gradient(150deg,#46DC86,#29C8D3)",
+    "glow": "rgba(70,220,134,0.4)",
+    "img": "assets/london/WF26-London-03-permission-to-automate.png",
+    "city": "London",
+    "full": "3 October · suggested",
+    "kind": "Post 3 · Permission To Automate",
+    "head": "Permission To Automate",
+    "body": [
+      "Which decisions are you willing to let AI make without a human in the loop?",
+      "That question stalls more AI programmes than the technology does. Not can it, but may it: under what controls, with what evidence, and who stays accountable when it acts.",
+      "Our view is that permission is granted in layers. An agent has to sense the operating reality, decide on grounded information, act safely and stay governed. Each layer earns the next.",
+      "Most organisations have drawn that line somewhere already, often without writing it down.",
+      "At ServiceNow World Forum London, we would like to hear where yours sits and what would move it.",
+      "📅 20 October | ExCeL London",
+      "Crossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026",
+    "link": "https://www.servicenow.com/events/world-forum/london.html",
+    "linkLabel": "Sponsor showcase listing",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london",
+    "note": "Existing caption retained for review: the new captions file does not supply replacement copy. 3 October remains a suggested date.",
+    "blocker": "Draft: confirm caption and publication date."
+  },
+  {
+    "n": "4",
+    "date": "8 Oct",
+    "label": "Stand<br>invitation",
+    "grad": "linear-gradient(150deg,#3ED7C0,#2CB0CD)",
+    "glow": "rgba(62,215,192,0.4)",
+    "img": "assets/london/WF26-London-04-stand-invitation.png",
+    "city": "London",
+    "full": "8 October",
+    "kind": "Post 4 · Stand Invitation",
+    "head": "Stand Invitation",
+    "body": [
+      "Coming to ServiceNow World Forum London? Make Crossfuze part of your day.",
+      "📍 Find us at Stand [LONDON STAND NUMBER].",
+      "Bring the ServiceNow question you’re working through:",
+      "• Where should we start with AI?",
+      "• What needs to improve before we automate further?",
+      "• How do we turn our platform roadmap into measurable business outcomes?",
+      "We’d love to hear your priorities and explore the next practical step together.",
+      "📅 20 October | ExCeL London\nCrossfuze | Platinum Sponsor",
+      "Already attending? Get in touch with your Crossfuze contact to arrange a conversation."
+    ],
+    "tags": "#ServiceNow #WorldForum2026 #Crossfuze",
+    "link": "https://www.servicenow.com/events/world-forum/london.html",
+    "linkLabel": "Event details and registration",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london",
+    "blocker": "Blocked: confirm the London stand number and replace its placeholder before publishing."
+  },
+  {
+    "n": "5",
+    "date": "9 Oct",
+    "label": "Maturity<br>Index",
+    "grad": "linear-gradient(150deg,#35D3B0,#2CB0CD)",
+    "glow": "rgba(53,211,176,0.4)",
+    "img": "assets/london/WF26-London-05-maturity-index.png",
+    "city": "London",
+    "full": "9 October",
+    "kind": "Post 5 · Maturity Index",
+    "head": "Maturity Index",
+    "body": [
+      "The enterprise average AI maturity score is 51. Where do you stand?",
+      "ServiceNow's Enterprise AI Maturity Index 2026 surveyed 4,500 executives across 19 countries and 12 industries. The average score rose to 51, up from 35 the year before, and only one in five organisations reached the Pacesetter band. Those that did report an average ROI of 160% on their AI investments.",
+      "The Crossfuze AI Readiness Benchmark gives you your own number. It scores your estate across data and knowledge quality, workflow maturity, governance and controls, operating ownership, and readiness across six business functions.",
+      "It runs in your browser. Five minutes, no sign-up, and the result is yours to export.",
+      "Run it before World Forum London on 20 October, then bring your score to the Crossfuze stand and we will walk through what to fix first.",
+      "Source: ServiceNow, Enterprise AI Maturity Index 2026.",
+      "📅 20 October | ExCeL London\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026",
+    "link": "https://www.crossfuze.com/campaigns/servicenow-ai-readiness-tools",
+    "linkLabel": "Explore the AI readiness tools",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london"
+  },
+  {
+    "n": "6",
+    "date": "14 Oct",
+    "label": "Assist<br>usage",
+    "grad": "linear-gradient(150deg,#71F1F7,#2CB0CD)",
+    "glow": "rgba(113,241,247,0.4)",
+    "img": "assets/london/WF26-London-06-assist-usage.png",
+    "city": "London",
+    "full": "14 October",
+    "kind": "Post 6 · Assist Usage",
+    "head": "Assist Usage",
+    "body": [
+      "How much ServiceNow AI will you actually use?",
+      "Most teams buy Now Assist before they can forecast it. Find out your number at the Crossfuze stand at World Forum London, in five minutes, before renewal.",
+      "The Crossfuze Assist Estimator and Tier Map takes your planned AI use cases, adoption assumptions and usage across ITSM, Customer Service, HRSD and App Engine, then forecasts 12 months of demand.",
+      "You get a consumption projection with a confidence band and an indicative fit against Foundation, Advanced and Prime.",
+      "Bring your assumptions to the stand on 20 October and we will model them with you on the day. Or run it yourself first and bring the result.",
+      "📅 20 October | ExCeL London\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #NowAssist #WorldForum2026",
+    "link": "https://www.crossfuze.com/campaigns/servicenow-ai-readiness-tools",
+    "linkLabel": "Explore the AI readiness tools",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london"
+  },
+  {
+    "n": "7",
+    "date": "17 Oct",
+    "label": "Bring your<br>figures",
+    "grad": "linear-gradient(150deg,#71F1F7,#2CB0CD)",
+    "glow": "rgba(113,241,247,0.4)",
+    "img": "assets/london/WF26-London-07-bring-your-figures.png",
+    "city": "London",
+    "full": "17 October",
+    "kind": "Post 7 · Bring Your Figures",
+    "head": "Bring Your Figures",
+    "body": [
+      "Bring your figures to World Forum London and leave with your Road to Zero baseline.",
+      "At the Crossfuze stand we will run both calculators with you, on the day, using your own assumptions.",
+      "• Your ServiceNow AI readiness score, and the weakest foundation behind it",
+      "• Your 12-month Now Assist consumption forecast and indicative tier fit",
+      "Five minutes each. You take the results with you, and we will talk through what they mean for your next 12 months.",
+      "📍 Stand [LONDON STAND NUMBER]\n📅 20 October | ExCeL London\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026 #Crossfuze",
+    "link": "https://www.crossfuze.com/campaigns/servicenow-ai-readiness-tools",
+    "linkLabel": "Explore the AI readiness tools",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london",
+    "blocker": "Blocked: confirm the London stand number and replace its placeholder before publishing."
+  },
+  {
+    "n": "8",
+    "date": "19 Oct",
+    "label": "Tomorrow<br>reminder",
+    "grad": "linear-gradient(150deg,#71F1F7,#2CB0CD)",
+    "glow": "rgba(113,241,247,0.4)",
+    "img": "assets/london/WF26-London-08-see-you-tomorrow.png",
+    "city": "London",
+    "full": "19 October",
+    "kind": "Post 8 · See You Tomorrow",
+    "head": "See You Tomorrow",
+    "body": [
+      "Tomorrow, we’re joining the ServiceNow community at World Forum London. 👋",
+      "The Crossfuze team is looking forward to meeting customers, partners and new faces at ExCeL London.",
+      "If you’re attending, come and say hello. Bring your questions, your plans or that one workflow you know could work better.",
+      "Let’s make time for a useful conversation about what comes next.",
+      "📅 20 October | ExCeL London\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #WorldForum2026 #Crossfuze",
+    "link": "https://www.servicenow.com/events/world-forum/london.html",
+    "linkLabel": "Plan your day",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-london"
+  }
+];
+
+var TORONTO = [
+  {
+    "n": "1",
+    "date": "1 Oct",
+    "label": "Platinum<br>announcement",
+    "grad": "linear-gradient(150deg,#8FFFDB,#29D3C6)",
+    "glow": "rgba(143,255,219,0.45)",
+    "img": "assets/toronto/WF26-Toronto-00-platinum-opener.png",
+    "city": "Toronto",
+    "full": "1 October",
+    "kind": "Post 1 · Platinum announcement",
+    "head": "Toronto · Platinum Sponsor",
+    "body": [
+      "Toronto, we’ll see you at World Forum 2026. 👋",
+      "Crossfuze is proud to be a Platinum Sponsor of ServiceNow World Forum Toronto on 3 November at Metro Toronto Convention Centre.",
+      "With AI firmly on the agenda, we’re looking forward to conversations about what comes next for your organization, and how to make it happen with ServiceNow.",
+      "Whether you’re strengthening your foundations, exploring AI or planning your next stage of transformation, come and meet the Crossfuze team.",
+      "📍 Metro Toronto Convention Centre\n📅 3 November 2026"
+    ],
+    "tags": "#ServiceNow #WorldForum2026 #Crossfuze",
+    "link": "https://www.servicenow.com/events/world-forum/toronto.html",
+    "linkLabel": "Explore the event and register",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto",
+    "images": [
+      "assets/toronto/WF26-Toronto-00-platinum-opener.png",
+      "assets/toronto/WF26-Toronto-01-road-to-zero.png"
+    ],
+    "note": "Two announcement images for 1 October. Use the Platinum opener as the lead image; Road to Zero can be the second image."
+  },
+  {
+    "n": "2",
+    "date": "13 Oct",
+    "label": "AI<br>readiness",
+    "grad": "linear-gradient(150deg,#63DF4E,#29D3C6)",
+    "glow": "rgba(99,223,78,0.45)",
+    "img": "assets/toronto/WF26-Toronto-02-readiness.png",
+    "city": "Toronto",
+    "full": "13 October",
+    "kind": "Post 2 · AI readiness",
+    "head": "AI Readiness",
+    "body": [
+      "How ready is your ServiceNow estate for AI?",
+      "And what would need to be true before you did?",
+      "Those are the conversations we’re looking forward to at ServiceNow World Forum Toronto.",
+      "For Crossfuze, preparing for the Autonomous Enterprise starts with practical questions: the outcome you want, the data you can trust and the controls that give you confidence to move forward.",
+      "If you’re working through your ServiceNow AI readiness priorities, let’s compare notes.",
+      "Join us on 3 November at Metro Toronto Convention Centre, where Crossfuze will be a Platinum Sponsor."
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026",
+    "link": "https://www.servicenow.com/events/world-forum/toronto.html",
+    "linkLabel": "Plan your visit",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto"
+  },
+  {
+    "n": "3",
+    "date": "17 Oct",
+    "label": "Autonomy<br>allowed",
+    "grad": "linear-gradient(150deg,#46DC86,#29C8D3)",
+    "glow": "rgba(70,220,134,0.4)",
+    "img": "assets/toronto/WF26-Toronto-03-autonomy-allowed.png",
+    "city": "Toronto",
+    "full": "17 October · suggested",
+    "kind": "Post 3 · Autonomy Allowed",
+    "head": "How much autonomy are you ready to allow?",
+    "body": [
+      "Caption to follow."
+    ],
+    "link": "https://www.servicenow.com/events/world-forum/toronto.html",
+    "linkLabel": "Plan your visit",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto",
+    "note": "The supplied Toronto captions file marks this as an added decision-principle post and says the post copy is still to come. The artwork itself carries the question: “How much autonomy are you ready to allow?”"
+  },
+  {
+    "n": "4",
+    "date": "22 Oct",
+    "label": "Which Zero<br>first?",
+    "grad": "linear-gradient(150deg,#3ED7C0,#2CB0CD)",
+    "glow": "rgba(62,215,192,0.4)",
+    "img": "assets/toronto/WF26-Toronto-04-which-zero-first.png",
+    "city": "Toronto",
+    "full": "22 October",
+    "kind": "Post 4 · Booth invitation",
+    "head": "Which Zero should you tackle first?",
+    "body": [
+      "Which Zero should you tackle first?",
+      "Coming to ServiceNow World Forum Toronto? Make Crossfuze part of your day.",
+      "📍 Find us at Booth [TORONTO BOOTH NUMBER].",
+      "Bring the ServiceNow question you’re working through:",
+      "• Where should we start with AI?",
+      "• What needs to improve before we automate further?",
+      "• How do we turn our platform roadmap into measurable business outcomes?",
+      "We’d love to hear your priorities and explore the next practical step together.",
+      "📅 3 November | Metro Toronto Convention Centre\nCrossfuze | Platinum Sponsor",
+      "Already attending? Get in touch with your Crossfuze contact to arrange a conversation."
+    ],
+    "tags": "#ServiceNow #WorldForum2026 #Crossfuze",
+    "link": "https://www.servicenow.com/events/world-forum/toronto.html",
+    "linkLabel": "Event details and registration",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto",
+    "blocker": "Blocked: confirm the Toronto booth number and replace its placeholder before publishing."
+  },
+  {
+    "n": "5",
+    "date": "23 Oct",
+    "label": "Readiness<br>number",
+    "grad": "linear-gradient(150deg,#35D3B0,#2CB0CD)",
+    "glow": "rgba(53,211,176,0.4)",
+    "img": "assets/toronto/WF26-Toronto-05-readiness-number.png",
+    "city": "Toronto",
+    "full": "23 October",
+    "kind": "Post 5 · Readiness benchmark",
+    "head": "Put a number on your AI readiness.",
+    "body": [
+      "Put a number on your AI readiness.",
+      "One in five organizations are Pacesetters. They report 160% average ROI on AI.",
+      "ServiceNow's Enterprise AI Maturity Index 2026 surveyed 4,500 executives across 19 countries and 12 industries. Only one in five organizations reached the Pacesetter band, and those that did report an average ROI of 160% on their AI investments, projected to rise to 194% next year. The overall average score is 51.",
+      "The Crossfuze AI Readiness Benchmark gives you your own number. It scores your estate across data and knowledge quality, workflow maturity, governance and controls, operating ownership, and readiness across six business functions.",
+      "It runs in your browser. Five minutes, no sign-up, and the result is yours to export.",
+      "Run it before World Forum Toronto on 3 November, then bring your score to the Crossfuze booth and we will walk through what to fix first.",
+      "Source: ServiceNow, Enterprise AI Maturity Index 2026.",
+      "📅 3 November | Metro Toronto Convention Centre\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026",
+    "link": "https://www.crossfuze.com/campaigns/servicenow-ai-readiness-tools",
+    "linkLabel": "Run the AI Readiness Benchmark",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto"
+  },
+  {
+    "n": "6",
+    "date": "28 Oct",
+    "label": "Forecast<br>usage",
+    "grad": "linear-gradient(150deg,#71F1F7,#2CB0CD)",
+    "glow": "rgba(113,241,247,0.4)",
+    "img": "assets/toronto/WF26-Toronto-06-forecast-usage.png",
+    "city": "Toronto",
+    "full": "28 October",
+    "kind": "Post 6 · Assist estimator",
+    "head": "Can you forecast your ServiceNow AI usage?",
+    "body": [
+      "Can you forecast your ServiceNow AI usage?",
+      "Most teams buy Now Assist before they can forecast it. Find out what you will actually consume, and what that should cost, at the Crossfuze booth at World Forum Toronto, in five minutes.",
+      "The Crossfuze Assist Estimator and Tier Map takes your planned AI use cases, adoption assumptions and usage across ITSM, Customer Service, HRSD and App Engine, then forecasts 12 months of demand.",
+      "You get a consumption projection with a confidence band and an indicative fit against Foundation, Advanced and Prime.",
+      "Bring your assumptions to the booth on 3 November and we will model them with you on the day. Or run it yourself first and bring the result.",
+      "📅 3 November | Metro Toronto Convention Centre\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #NowAssist #WorldForum2026",
+    "link": "https://www.crossfuze.com/campaigns/servicenow-ai-readiness-tools",
+    "linkLabel": "Run the Assist Estimator and Tier Map",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto"
+  },
+  {
+    "n": "7",
+    "date": "31 Oct",
+    "label": "Find your<br>place",
+    "grad": "linear-gradient(150deg,#71F1F7,#2CB0CD)",
+    "glow": "rgba(113,241,247,0.4)",
+    "img": "assets/toronto/WF26-Toronto-07-find-your-place.png",
+    "city": "Toronto",
+    "full": "31 October",
+    "kind": "Post 7 · Numbers at the booth",
+    "head": "Find your place on the Road to Zero.",
+    "body": [
+      "Find your place on the Road to Zero.",
+      "Bring your ServiceNow priorities to World Forum Toronto and leave with your Road to Zero baseline.",
+      "At the Crossfuze booth we will run both calculators with you, on the day, using your own assumptions.",
+      "• Your ServiceNow AI readiness score, and the weakest foundation behind it",
+      "• Your 12-month Now Assist consumption forecast and indicative tier fit",
+      "Five minutes each. You take the results with you, and we will talk through what they mean for your next 12 months.",
+      "📍 Booth [TORONTO BOOTH NUMBER]\n📅 3 November | Metro Toronto Convention Centre\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #AIReadiness #WorldForum2026 #Crossfuze",
+    "link": "https://www.crossfuze.com/campaigns/servicenow-ai-readiness-tools",
+    "linkLabel": "Try the tools before you come",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto",
+    "blocker": "Blocked: confirm the Toronto booth number and replace its placeholder before publishing."
+  },
+  {
+    "n": "8",
+    "date": "2 Nov",
+    "label": "Tomorrow<br>reminder",
+    "grad": "linear-gradient(150deg,#C0A6FF,#8A6BE8)",
+    "glow": "rgba(192,166,255,0.35)",
+    "img": "assets/toronto/WF26-Toronto-08-see-you-tomorrow.png",
+    "city": "Toronto",
+    "full": "2 November",
+    "kind": "Post 8 · See You Tomorrow",
+    "head": "See You Tomorrow",
+    "body": [
+      "Tomorrow, we’re joining the ServiceNow community at World Forum Toronto. 👋",
+      "The Crossfuze team is looking forward to meeting customers, partners and new faces at Metro Toronto Convention Centre.",
+      "If you’re attending, come and say hello. Bring your questions, your plans or that one workflow you know could work better.",
+      "Let’s make time for a useful conversation about what comes next.",
+      "📅 3 November | Metro Toronto Convention Centre\nCrossfuze | Platinum Sponsor"
+    ],
+    "tags": "#ServiceNow #WorldForum2026 #Crossfuze",
+    "link": "https://www.servicenow.com/events/world-forum/toronto.html",
+    "linkLabel": "Plan your day",
+    "booking": "https://meetings.hubspot.com/lee-farnsworth1/meet-crossfuze-at-world-forum-toronto"
+  }
+];
+
+function build(railId, list){
+  var rail = document.getElementById(railId);
+  list.forEach(function(p, i){
+    var col = document.createElement('div');
+    col.className = 'col';
+    var art = p.img
+      ? '<img class="thumb" src="' + p.img + '" alt="' + p.kind + '">'
+      : '<div class="ph">Card to follow</div>';
+    col.innerHTML =
+      '<div class="lab"><div class="date">' + p.date + '</div><div class="kind">' + p.label + '</div></div>' +
+      '<button type="button" class="node" style="background:' + p.grad + '; box-shadow:0 0 28px ' + p.glow + '">' + p.n + '</button>' +
+      art;
+    col.addEventListener('click', function(){ open(p); });
+    rail.appendChild(col);
+  });
+}
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function open(p){
+  var body = p.body.map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('');
+  var images = p.images || (p.img ? [p.img] : []);
+  var right = images.length ? '<div style="display:flex;flex-direction:column;gap:14px">' + images.map(function(src,i){return '<img src="'+src+'" alt="'+esc(p.head)+' artwork '+(i+1)+'" style="width:100%;height:auto;border-radius:10px;display:block"><a class="dl" href="'+src+'" download>Download image '+(i+1)+'</a>';}).join('') + '</div>' : '';
+  document.getElementById('panel').className = 'panel' + (p.img ? '' : ' noimg');
+  document.getElementById('panel').innerHTML =
+    '<div style="display:flex; flex-direction:column; gap:16px; min-width:0">' +
+      '<div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center">' +
+        '<span class="chip">' + esc(p.city + ' · ' + p.full) + '</span>' +
+        '<span class="eyebrow" style="font-size:13px; color:#8FFFDB">' + esc(p.kind) + '</span>' +
+      '</div>' +
+      '<div style="font-size:26px; font-weight:700; line-height:1.18">' + esc(p.head) + '</div>' +
+      '<div style="display:flex; flex-direction:column; gap:14px; font-size:17px; line-height:1.6; color:rgba(255,255,255,0.88)">' + body + '</div>' +
+      (p.link ? '<p style="font-size:17px"><a href="' + p.link + '" target="_blank" rel="noopener">' + esc(p.linkLabel) + '</a></p>' : '') +
+      (p.booking ? '<p><a href="'+p.booking+'" target="_blank" rel="noopener">Book time with Crossfuze at World Forum ' + esc(p.city) + ' ↗</a></p>' : '') +
+      (p.tags ? '<div style="font-size:16px; font-weight:600; color:#71F1F7">' + esc(p.tags) + '</div>' : '') +
+      (p.blocker ? '<div style="font-size:15px; font-weight:700; color:#F65275">' + esc(p.blocker) + '</div>' : '') +
+      (p.note ? '<div style="font-size:15px; color:rgba(255,255,255,0.6)">' + esc(p.note) + '</div>' : '') +
+    '</div>' + right;
+  document.getElementById('ov').classList.add('on');
+}
+
+build('railL', LONDON);
+build('railT', TORONTO);
+document.getElementById('ov').addEventListener('click', function(e){
+  if (e.target.id === 'ov') this.classList.remove('on');
+});
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') document.getElementById('ov').classList.remove('on');
+});
+</script>
+</body>
+</html>
