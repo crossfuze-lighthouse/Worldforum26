@@ -34,6 +34,28 @@
   .dl { background:#63DF4E; color:#040E3D; border-radius:999px; padding:12px 24px; font-size:15px; font-weight:700; text-align:center; display:block; }
   .dl:hover { color:#040E3D; }
   @media (max-width:760px){ .panel { grid-template-columns:minmax(0,1fr); } }
+  .map { background:rgba(255,255,255,0.04); border:1px solid rgba(113,241,247,0.22); border-radius:20px; padding:clamp(20px,3vw,36px); display:flex; flex-direction:column; gap:22px; }
+  .map-head { display:flex; flex-direction:column; gap:6px; }
+  .m-story { background:linear-gradient(90deg,#8FFFDB,#71F1F7); color:#040E3D; border-radius:14px; padding:22px 26px; display:flex; flex-direction:column; gap:8px; }
+  .m-principles { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .m-principles span { background:rgba(4,14,61,0.1); border-radius:999px; padding:5px 14px; font-size:14px; font-weight:600; }
+  .m-grid { display:grid; grid-template-columns:minmax(150px,0.8fr) repeat(3, minmax(0,1fr)); gap:10px; }
+  .m-size { background:rgba(255,255,255,0.08); border-radius:10px; padding:12px; text-align:center; display:flex; flex-direction:column; gap:2px; }
+  .m-size b { font-size:17px; } .m-size span { font-size:14px; color:rgba(255,255,255,0.65); }
+  .m-track { border-radius:10px; padding:14px; display:flex; flex-direction:column; justify-content:center; gap:4px; background:rgba(143,255,219,0.12); border:1px solid rgba(143,255,219,0.35); }
+  .m-track small { font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#8FFFDB; }
+  .m-track b { font-size:17px; }
+  .m-cell { border-radius:10px; padding:14px 16px; background:rgba(113,241,247,0.08); border:1px solid rgba(113,241,247,0.3); display:flex; flex-direction:column; gap:4px; }
+  .m-cell b { font-size:16px; } .m-cell span { font-size:14px; line-height:1.45; color:rgba(255,255,255,0.75); }
+  .m-flow { background:rgba(192,166,255,0.12); border-color:rgba(192,166,255,0.45); }
+  .m-next { border-style:dashed; }
+  .m-found, .m-found-cell { background:rgba(44,176,205,0.16); border-color:rgba(44,176,205,0.5); }
+  .m-found small { color:#71F1F7; }
+  .m-del, .m-del-cell { background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.2); }
+  .m-del small { color:rgba(255,255,255,0.6); }
+  .m-notes { display:flex; flex-direction:column; gap:8px; font-size:15px; line-height:1.55; color:rgba(255,255,255,0.65); max-width:900px; }
+  .m-notes p { margin:0; }
+  @media (max-width:760px){ .m-grid { grid-template-columns:repeat(3, minmax(0,1fr)); } .m-grid > div:first-child { display:none; } .m-track { grid-column:1 / -1; } .m-size b { font-size:14px; } .m-size span { font-size:12px; } .m-size { padding:10px 6px; } }
 </style>
 </head>
 <body>
@@ -45,7 +67,7 @@
     </div>
     <div class="eyebrow" style="color:#8FFFDB; padding-top:8px">Social schedule · World Forum 2026</div>
     <h1>Fifteen posts. <span style="color:#71F1F7">Two cities.</span></h1>
-    <p style="margin:0; font-size:19px; line-height:1.55; max-width:720px; color:rgba(255,255,255,0.78)">London runs 17 September to 19 October, Toronto 1 October to 2 November. Every card is 1200×1200 for the Crossfuze company page.</p>
+    <p style="margin:0; font-size:19px; line-height:1.55; max-width:720px; color:rgba(255,255,255,0.78)">London runs 17 September to 19 October, Toronto 1 October to 2 November. Every card is 1200×1200 for the Crossfuze company page. Below them, the <a href="#slt">senior leadership line</a> carries the Road to Zero story in four personal posts, with the master map.</p>
   </header>
 
   <section style="display:flex; flex-direction:column; gap:20px">
@@ -65,6 +87,58 @@
     </div>
     <div class="rail" id="railT">
       <div class="line" style="left:6%; right:6%; background:linear-gradient(90deg,#71F1F7,#2CB0CD 55%,#C0A6FF)"></div>
+    </div>
+  </section>
+
+  <section id="slt" style="display:flex; flex-direction:column; gap:28px; border-top:1px solid rgba(255,255,255,0.14); padding-top:40px">
+    <div style="display:flex; align-items:baseline; gap:16px; flex-wrap:wrap">
+      <h2 style="color:#8FFFDB">SLT · Senior leadership</h2>
+      <span style="font-size:15px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.6)">World Forum · Road to Zero · 4 assets · 1080×1350 portrait</span>
+    </div>
+    <p style="margin:0; font-size:17px; line-height:1.55; max-width:760px; color:rgba(255,255,255,0.78)">Personal posts for the senior leadership team, run alongside the company page in the run-up to London. One story, told from four seats: the guide launch, the President and CRO, Growth and Market Strategy, and EMEA Sales. Dates are suggested.</p>
+    <div class="rail" id="railS">
+      <div class="line" style="left:6%; right:6%; background:linear-gradient(90deg,#8FFFDB,#71F1F7 50%,#2CB0CD)"></div>
+    </div>
+
+    <div class="map" aria-label="Crossfuze Autonomous Enterprise master map">
+      <div class="map-head">
+        <div class="eyebrow" style="color:#8FFFDB">Crossfuze · Autonomous Enterprise master map</div>
+        <div style="font-size:15px; color:rgba(255,255,255,0.6)">High-level view · Strategy, campaigns, customer journeys and commercial offers</div>
+      </div>
+
+      <div class="m-story">
+        <div class="eyebrow" style="font-size:12px; color:rgba(4,14,61,0.7)">Crossfuze master narrative</div>
+        <div style="font-size:26px; font-weight:700; line-height:1.15">Preparing for the Autonomous Enterprise</div>
+        <div style="font-size:17px; font-weight:600">The Confidence to Keep Evolving</div>
+        <div class="m-principles"><span>Autonomy Is Earned</span><span>Permission to Automate</span><span>The ServiceNow AI Readiness Gap, the barrier to progress</span></div>
+      </div>
+
+      <div class="m-grid">
+        <div></div>
+        <div class="m-size"><b>Mid-market</b><span>Under 2,000</span></div>
+        <div class="m-size"><b>Commercial</b><span>2,000 to 5,000</span></div>
+        <div class="m-size"><b>Enterprise</b><span>5,000+</span></div>
+
+        <div class="m-track m-found"><small>Shared foundation · Guide 01</small><b>AI Readiness</b></div>
+        <div class="m-cell m-found-cell" style="grid-column:span 3"><b>Data · Workflows · AI · Governance</b><span>Free Benchmark → 90-minute Assessment · every size</span></div>
+
+        <div class="m-track"><small>Track A · Guide 02</small><b>Autonomous IT</b></div>
+        <div class="m-cell m-flow"><b>Flow by ServiceNow</b><span>Up to ~2,000 · product-led entry</span></div>
+        <div class="m-cell" style="grid-column:span 2"><b>The Road to Zero</b><span>Zero-Touch Support · Zero Service Outages · Zero Asset Issues · Zero Severe Breaches · Zero Misaligned Investments</span></div>
+
+        <div class="m-track"><small>Track B · Guide 03</small><b>Business Reinvention</b></div>
+        <div class="m-cell m-flow m-next"><b>Flow for HR</b><span>Next</span></div>
+        <div class="m-cell" style="grid-column:span 2"><b>Beyond IT</b><span>HR · Finance · Legal · Procurement · Workplace and H&amp;S · Core Business Suite, Otto within Track B</span></div>
+
+        <div class="m-track m-del"><small>Crossfuze</small><b>Commercial delivery</b></div>
+        <div class="m-cell m-del-cell" style="grid-column:span 3"><b>Understand → Align → Change → Prove → Evolve</b><span>Advisory · Implementation &amp; Transformation · Infuze · Extend · Managed Services · Optimisation</span></div>
+      </div>
+
+      <div class="m-notes">
+        <p><b style="color:#fff">Flow by ServiceNow</b> is a separate, product-led entry point, standalone or alongside existing ServiceNow. Account growth carries Flow customers onto the Road to Zero.</p>
+        <p><b style="color:#fff">How customers enter the story.</b> These routes apply across mid-market, commercial and enterprise customers. Maturity and ambition determine the appropriate engagement.</p>
+        <p>The map groups our assets under one story. It does not imply customers must progress from Track A to Track B, or complete a fixed sequence.</p>
+      </div>
     </div>
   </section>
 
@@ -386,6 +460,61 @@ var TORONTO = [
  }
 ];
 
+var GUIDE = '[ROAD TO ZERO GUIDE LINK]';
+var TOOLS = 'https://www.crossfuze.com/interactive-tools';
+var SLT = [
+ { n:'1', date:'12 Oct', label:'Guide<br>launch', grad:'linear-gradient(150deg,#8FFFDB,#71F1F7)', glow:'rgba(143,255,219,0.45)',
+   img:'assets/slt/SLT-01-road-to-zero-launch.png', dl:'Download 1080×1350', city:'SLT', full:'12 October (suggested)', kind:'Post 1 · The Road to Zero launch',
+   head:'The Road to Zero. / The Crossfuze guide to Autonomous IT.',
+   body:['Your board isn’t asking whether AI is coming to IT. They’re asking when IT stops reacting.',
+     '59% of organisations have moved beyond agentic AI pilots. Only 9% have made meaningful progress on autonomous multistep workflows (ServiceNow Enterprise AI Maturity Index 2026).',
+     'That 50-point gap is rarely about the technology. It’s a CMDB nobody trusts, workflows nobody owns and governance that arrives too late.',
+     'The Road to Zero is our new guide to Autonomous IT. It works through five questions:',
+     '→ Why does IT have to change?','→ What is your ServiceNow AI Readiness Gap?','→ Are we ready for Autonomous IT?','→ Which Zero should we pursue first?','→ How do we get there?',
+     'Five outcomes on one platform: zero-touch support, zero service outages, zero asset issues, zero severe breaches and zero misaligned investments.',
+     'The capability is already here. The question is whether you are.',
+     'Download the free guide: ' + GUIDE],
+   tags:'#ServiceNow #AutonomousIT #AgenticAI', link:TOOLS, linkLabel:'Crossfuze interactive tools',
+   note:'Owner: company page or a member of the SLT. Add the guide link where marked.' },
+ { n:'2', date:'13 Oct', label:'Nick<br>McGillivray', grad:'linear-gradient(150deg,#71F1F7,#2CB0CD)', glow:'rgba(113,241,247,0.45)',
+   img:'assets/slt/SLT-02-nick-mcgillivray.png', dl:'Download 1080×1350', city:'SLT · Nick McGillivray', full:'13 October (suggested)', kind:'Post 2 · From the foreword',
+   head:'When does IT stop reacting?',
+   body:['There’s been a fundamental shift in the conversations I’m having with customers.',
+     'A few years ago the question was what AI might make possible. Today the capabilities are here, and most C-suite leaders I speak to are asking the same thing: when does IT stop reacting?',
+     'For most enterprises the answer is not yet, and the reason is rarely the technology. It’s a CMDB nobody trusts, workflows nobody owns and governance that arrives too late.',
+     'AI makes execution abundant. It does not make understanding abundant.',
+     'Fix the foundations and AI compounds. Skip them and you have an expensive assistant repeating your worst data back to you with confidence.',
+     'That’s why we wrote The Road to Zero, our practical guide to Autonomous IT. It works through five questions, from why IT has to change to which Zero to pursue first.',
+     'Read the answer: ' + GUIDE,
+     'Then hear it live. Oliver Nowak, our AI Practice Lead, presents The AI Reality Check at ServiceNow World Forum London: Tuesday 20 October, 2:30pm, Expo Theatre 3, Level 1.'],
+   tags:'#ServiceNow #AutonomousIT #AgenticAI', link:EV, linkLabel:'Add The AI Reality Check to your agenda',
+   note:'Posted by Nick McGillivray, President & Chief Revenue Officer. Nick to approve wording.' },
+ { n:'3', date:'15 Oct', label:'Jeslyn<br>Carlson', grad:'linear-gradient(150deg,#C0A6FF,#71F1F7)', glow:'rgba(192,166,255,0.45)',
+   img:'assets/slt/SLT-03-jeslyn-carlson-flow.png', dl:'Download 1080×1350', city:'SLT · Jeslyn Carlson', full:'15 October (suggested)', kind:'Post 3 · Flow by ServiceNow',
+   head:'Is ServiceNow finally the right size for you?',
+   body:['Many of the organisations we speak to have reached the same conclusion: ServiceNow sounds right, but it isn’t built for a company our size.',
+     'So they run support through Slack messages, a shared inbox and a spreadsheet someone set up years ago. It works, until the team grows and the same questions keep coming back.',
+     'Flow by ServiceNow starts from a different question: what if the service desk came to the conversation?',
+     'That changes the first question. It is no longer whether you can take on ServiceNow. It is where you should start.',
+     'Our new guide sets out what ServiceNow has published about Flow: what it is, who it is for, how it works and what it costs. Flow is in controlled availability today, with general availability for North America and EMEA expected in Q4 2026.',
+     'Read the answer: [FLOW GUIDE LINK]',
+     'Then talk to us in person. We’re at Booth 3 at ServiceNow World Forum London.'],
+   tags:'#ServiceNow #Flow #ServiceDesk', link:EV, linkLabel:'Plan your visit',
+   note:'Posted by Jeslyn Carlson, VP Growth & Market Strategy. Every line is drawn from her Flow guide foreword.' },
+ { n:'4', date:'16 Oct', label:'Samuel<br>Prus', grad:'linear-gradient(150deg,#2CB0CD,#8FFFDB)', glow:'rgba(44,176,205,0.45)',
+   img:'assets/slt/SLT-04-samuel-prus.png', dl:'Download 1080×1350', city:'SLT · Samuel Prus', full:'16 October (suggested)', kind:'Post 4 · AI readiness before you renew',
+   head:'The gap is not closed by buying more capability.',
+   body:['The gap is not closed by buying more capability.',
+     'Your ServiceNow AI Readiness Gap is the distance between what ServiceNow AI can do and what your organisation can safely let it do. It is closed by making the estate safe to hand it to.',
+     'It matters now. Existing SKUs reached end of sale on 1 July 2026, so the tier you renew on has to fit the Zero you are heading for.',
+     'Before your next renewal, know three things: are you ready, what will it consume, and which tier does your first Zero need?',
+     'Our free 90-minute AI Readiness Assessment, led by Oliver Nowak, and our Assist Estimator answer all three before you sign: ' + TOOLS,
+     'Read the answer in The Road to Zero: ' + GUIDE,
+     'Then hear it live at ServiceNow World Forum London. The AI Reality Check, Tuesday 20 October, 2:30pm, Expo Theatre 3, Level 1.'],
+   tags:'#ServiceNow #ServiceNowRenewal #AutonomousIT', link:TOOLS, linkLabel:'Open the Assessment and Assist Estimator', link2:EV, link2Label:'Add The AI Reality Check to your agenda',
+   note:'Posted by Samuel Prus, VP Sales, EMEA.' }
+];
+
 function build(railId, list){
   var rail = document.getElementById(railId);
   list.forEach(function(p, i){
@@ -410,7 +539,7 @@ function open(p){
   var right = p.img
     ? '<div style="display:flex; flex-direction:column; gap:14px">' +
         '<img src="' + p.img + '" alt="" style="width:100%; height:auto; border-radius:10px; display:block">' +
-        '<a class="dl" href="' + p.img + '" download>Download 1200×1200</a></div>'
+        '<a class="dl" href="' + p.img + '" download>' + (p.dl || 'Download 1200×1200') + '</a></div>'
     : '';
   document.getElementById('panel').className = 'panel' + (p.img ? '' : ' noimg');
   document.getElementById('panel').innerHTML =
@@ -432,6 +561,7 @@ function open(p){
 
 build('railL', LONDON);
 build('railT', TORONTO);
+build('railS', SLT);
 document.getElementById('ov').addEventListener('click', function(e){
   if (e.target.id === 'ov') this.classList.remove('on');
 });
